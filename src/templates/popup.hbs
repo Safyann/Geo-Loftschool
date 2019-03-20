@@ -1,0 +1,21 @@
+<div class="popup">
+    <header class="popup__header">
+        <i class="popup__location"></i>
+        <div class="popup__title js-popup-title">{{address}}</div>
+        <i class="popup__close js-popup-close"></i>
+    </header>
+    <div class="popup__content">
+        <div class="popup__reviews js-popup-reviews">
+            {{{reviews}}}
+        </div>
+        <form class="form js-popup-form">
+            <div class="form__title">Ваш отзыв</div>
+            <input type="text" class="form__input js-popup-author js-popup-required" placeholder="Ваше имя">
+            <input type="text" class="form__input js-popup-place js-popup-required" placeholder="Укажите место">
+            <textarea type="text" class="form__text-area js-popup-comment js-popup-required" placeholder="Поделитесь впечатлениями"></textarea>
+        </form>
+    </div>
+    <footer class="popup__footer">
+        <button class="popup__send js-popup-add" data-coords="{{coordinates}}">Добавить</button>
+    </footer>
+</div>

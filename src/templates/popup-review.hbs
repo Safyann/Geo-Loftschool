@@ -1,0 +1,15 @@
+{{#if reviews}}
+    {{#each reviews}}
+        <div class="review">
+            <header class="review__header">
+                <div class="review__author">{{author}}</div>
+                <div class="review__place">{{place}}</div>
+                <div class="review__date">{{date}}</div>
+                <div class="review__time">{{time}}</div>
+            </header>
+            <div class="review__content">{{comment}}</div>
+        </div>
+    {{/each}}
+{{else}}
+    <div class="review__none">Пока нет отзывов...</div>
+{{/if}}

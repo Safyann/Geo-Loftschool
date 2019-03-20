@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.popup {
+    border-radius: 12px;
+    background-color: #fff;
+    width: 380px;
+    box-sizing: border-box;
+    text-align: initial;
+}
+
+.popup__header {
+    display: flex;
+    align-items: center;
+    background-color: #ff8663;
+    padding: 15px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+}
+
+.popup__location {
+    width: 14px;
+    height: 14px;
+    background: url(../images/location.svg) center no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+.popup__close {
+    width: 14px;
+    height: 14px;
+    background: url(../images/close.svg) center no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    transition: opacity .2s ease;
+}
+
+.popup__close:hover {
+    opacity: .6;
+}
+
+.popup__content {
+    padding: 15px 15px 0;
+    margin-bottom: 15px;
+}
+
+.popup__reviews {
+    height: 140px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    overflow-y: auto;
+}
+
+.popup__footer {
+    padding: 0 15px 15px;
+    border-radius: 0 0 12px 12px;
+    text-align: right;
+}
+
+.popup__send {
+    border-radius: 10px;
+    background-color: #ff8663;
+    color: #fff;
+    padding: 7px 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    font-size: 16px;
+    color: #ff8663;
+    margin-bottom: 15px;
+}
+
+.form__input,
+.form__text-area {
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #c4c4c4;
+    border-radius: 25px;
+}
+
+.form__input:last-child,
+.form__text-area:last-child {
+    margin-bottom: initial;
+}
+
+.form__text-area {
+    min-height: 130px;
+    resize: none;
+}
+
+.review {
+    font-size: 16px;
+    color: #4f4f4f;
+    margin-bottom: 18px;
+}
+
+.review__header {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.review__author {
+    margin-right: 10px;
+}
+
+.review__date,
+.review__time,
+.review__place {
+    margin-right: 5px;
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.review__date:last-child,
+.review__time:last-child,
+.review__place:last-child {
+    margin-right: 0;
+}
+
+.review__place {
+    font-size: 16px;
+}
+
+.cluster {
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+    padding-bottom: 28px;
+}
+
+.cluster__place {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cluster__address {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.cluster__comment {
+    height: 70px;
+    overflow-y: auto;
+}
+
+.cluster__footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    color: #8c8c8c;
+}
+
+.cluster__date {
+    margin-right: 3px;
+}
